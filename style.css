@@ -1,0 +1,194 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.flex-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+}
+
+/* ---------- HEADER -------- */
+
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: rgb(221, 221, 221);
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+.logo{
+    width: 15vw;
+    padding: 15px;
+    height: 7vh;
+}
+
+#header-img{
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#nav-list{
+    display: flex;
+    width: 35vw;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 400;
+    color: black;
+    list-style: none;
+}
+
+#nav-list a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 600px){
+    #header{
+        flex-wrap: wrap;
+    }
+    .logo {
+        width: 100vw;
+    }
+    .logo img {
+        margin: auto;
+    }
+
+    #nav-list{
+        text-align: center;
+        flex-direction: column;
+        width: 100vw;
+        padding: 0;
+    }
+}
+
+/* ---------- WELCOME -------- */
+
+#welcome-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100vh;
+    background-size: cover;
+    background-image: URL('yellow-wireframe-lg.jpg');
+}
+
+#me {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#me h1, h4{
+    margin: 5px;
+}
+
+@media screen and (max-width:650px){
+    #welcome-section{
+        background-image: URL('yellow-wireframe-sm.jpg');
+        height: 50vh;
+    }
+}
+
+/* ---------- CONTACT -------- */
+
+#contact {
+    background-size: cover;
+    background-image: URL('turquoise-lg.png');
+    padding: 2rem;
+}
+
+#contact h1{
+    color: black;
+    font-size: 2rem;
+}
+
+#email{
+    width: 60%;
+    box-shadow: 0 8px 5px rgba(57, 63, 72, 0.3);
+}
+
+@media screen and (max-width:650px){
+    #contact{
+        background-image: URL('turquoise-sm.png');
+    }
+
+    #email{
+        width: 100%;
+    }
+}
+
+/* ---------- FOOTER -------- */
+
+footer{
+    padding: 1rem 20px;
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2.5rem;
+    justify-content: space-between;
+}
+
+.info{
+    font-weight: 800;
+}
+
+#love{
+    color: red;
+}
+
+.social{
+    text-align: right;
+}
+
+#social-list{
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+}
+
+#social-list li{
+    list-style: none;
+    padding: 5px;
+}
+
+#social-list a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 600px){
+    footer{
+        flex-direction: column;
+    }
+
+    .info{
+        text-align: center;
+    }
+
+    .social{
+        text-align: center;
+    }
+
+    #social-list{
+        margin-bottom: 0;
+        padding: 0;
+    }
+}
