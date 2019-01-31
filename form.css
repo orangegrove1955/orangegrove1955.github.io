@@ -1,0 +1,155 @@
+/* BASIC FORM STYLE ======================================= */
+
+#email-form {
+    width: 60%;
+    box-shadow: 0 8px 5px rgba(57, 63, 72, 0.3);
+    padding: 2rem;
+}
+
+@media screen and (max-width:650px){
+    #email-form {
+        width: 90%;
+    }
+}
+
+/* FORM GROUP ======================================= */
+
+.form-group { 
+  position:relative; 
+  margin-bottom:45px; 
+  width: 80%
+}
+
+@media screen and (max-width: 600px){
+    .form-group {
+        width: 100%;
+    }
+}
+
+/* INPUT FIELDS ======================================= */
+
+input {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  background-color: rgb(221, 221, 221);
+  border-bottom:1px solid #757575;
+}
+input:focus { outline:none; }
+
+/* TEXTAREA ======================================= */
+
+textarea {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:100%;
+    border:none;
+    background-color: rgb(221, 221, 221);
+    border-bottom:1px solid #757575;
+}
+textarea:focus { outline:none; }
+
+/* LABEL ======================================= */
+label {
+  color:black; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* Active state */
+input:focus ~ label, input:valid ~ label, 
+textarea:focus ~ label {
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar { position:relative; display:block; width:100%; }
+.bar:before, .bar:after {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* Active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after,
+textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100%; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* Input active state */
+input:focus ~ .highlight,
+textarea:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* SEND BUTTON ================ */
+#send{
+    width: 40%;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background-color:rgb(28, 184, 65);
+}
+
+#send:hover{
+    background-color:rgb(22, 141, 50);
+}
+
+@media screen and (max-width:650px){
+    #send{
+        width: 100%;
+    }
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
