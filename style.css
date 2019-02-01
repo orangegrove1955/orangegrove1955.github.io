@@ -118,6 +118,16 @@ body{
     box-shadow: 0 8px 5px rgba(57, 63, 72, 0.3);
 }
 
+#languages{
+    widtH: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+
 @media screen and (max-width:650px){
     #about{
         background-image: URL('images/mesh-sm.png');
@@ -125,6 +135,10 @@ body{
 
     #about img{
         width: 90%;
+    }
+
+    #languages i:nth-child(2n) {
+        flex-basis: 33%;
     }
 }
 
