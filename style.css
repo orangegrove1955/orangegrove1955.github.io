@@ -31,7 +31,6 @@ body{
 }
 
 .logo{
-    width: 15vw;
     padding: 15px;
     height: 7vh;
 }
@@ -126,6 +125,51 @@ body{
 
     #about img{
         width: 90%;
+    }
+}
+
+/* ---------- PROJECTS -------- */
+
+#projects{
+    padding-bottom: 0;
+}
+
+
+#alexa{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 70vh;
+}
+
+.project-tile{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    width: 50vw;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#pink{
+    background-image: URL('images/alexa-pink.jpg');
+}
+
+#blue{
+    background-image: URL('images/alexa-blue.jpg')
+}
+
+@media screen and (max-width: 650px){
+    #alexa{
+        flex-direction: column;
+    }
+    .project-tile{
+        width: 100vw;
+        height: 50vh;
     }
 }
 
