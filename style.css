@@ -110,6 +110,7 @@ body{
 
 #about{
     background-image: URL('images/mesh-lg.png');
+    background-size: cover;
     color: white;
 }
 
