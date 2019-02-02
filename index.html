@@ -55,12 +55,12 @@
             <i class="fab fa-angular"></i>
             <i class="fab fa-php"></i>
             <i class="fab fa-node"></i>
-            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-aws"></i>
             <i class="fab fa-python"></i>
             <i class="fab fa-html5"></i>
             <i class="fab fa-react"></i>
             <i class="fab fa-js"></i>
-            <i class="fab fa-aws"></i>
+            <i class="fab fa-css3-alt"></i>
         </div>
     </section>
 
@@ -81,7 +81,7 @@
     </section>
 
     <section class="flex-section" id="contact">
-        <form class="flex-section" id="email-form">
+        <form class="flex-section" id="email-form" method="POST" action="https://formspree.io/orangegrove_1955@hotmail.com">
             <h1>Get in touch</h1>
             <div class="form-group">
                 <input class="form-input" type="text" id="name" required>
@@ -98,13 +98,13 @@
             </div>
 
             <div class="form-group">
-                <textarea class="form-input" id="message"></textarea>
+                <textarea class="form-input" id="message" required></textarea>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>Your Message</label>
             </div>
 
-            <button id="send">
+            <button id="send" type="submit">
                 <i class="fab fa-telegram-plane"></i> Send
             </button>
         </form>
@@ -126,6 +126,7 @@
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <script>
+    // Burger dynamics
     let burger = document.getElementById('burger'),
         nav = document.getElementById('mobile-nav');
 
